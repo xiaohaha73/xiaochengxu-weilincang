@@ -1,0 +1,111 @@
+<!-- components/index/jobnav/jobnav.wxml -->
+<!-- 岗位推荐组件 -->
+<view class="job-recommend">
+  <view class="left content-box">
+    <image class="bgimg" src="../../../images/bg_img/back_b.png"></image>
+    <view class="content-msg">
+      <view class="top">
+        <text class="title">名企招聘</text>
+        福利好 薪资高 购五险
+      </view>
+      <swiper class="left-swiper" autoplay="{{true}}" circular="{{true}}" vertical="{{true}}">
+        <swiper-item>
+          <text>中国人寿保险股份有限公司</text>
+          <text>中国人寿保险股份有限公司</text>
+          <text>中国人寿保险股份有限公司</text>
+          <text>中国人寿保险股份有限公司</text>
+          <text>中国人寿保险股份有限公司</text>
+          <view class="bottom">
+            <image class="tag" src="../../../images/icon/new_o.png"></image>
+            1000+人已看
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <text>中国人寿保险股份有限公司</text>
+          <text>中国人寿保险股份有限公司</text>
+          <text>中国人寿保险股份有限公司</text>
+          <text>中国人寿保险股份有限公司</text>
+          <text>中国人寿保险股份有限公司</text>
+          <view class="bottom">
+            <image class="tag" src="../../../images/icon/new_o.png"></image>
+            1000+人已看
+          </view>
+        </swiper-item>
+      </swiper>
+      <!-- <view class="bottom">
+          <image class="tag" src="../../../images/icon/new_o.png"></image>
+          1000+人已看
+        </view> -->
+    </view>
+  </view>
+  <view class="right">
+    <view class="top content-box">
+      <image class="bgimg" src="../../../images/bg_img/back_g.png"></image>
+      <view class="content-msg">
+        <view class="top">
+          <text class="title">热门岗位</text>
+          需求大 成长快 薪资高
+        </view>
+        <swiper class="right-swiper" autoplay="{{true}}" circular="{{true}}" vertical="{{true}}">
+          <swiper-item>
+            <text>中国人寿保险股份有限公司</text>
+            <view class="bottom">
+              <image class="tag" src="../../../images/icon/new_o.png"></image>
+              1000+人已看
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <text>中国人寿保险股份有限公司</text>
+            <view class="bottom">
+              <image class="tag" src="../../../images/icon/new_o.png"></image>
+              1000+人已看
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <text>中国人寿保险股份有限公司</text>
+            <view class="bottom">
+              <image class="tag" src="../../../images/icon/new_o.png"></image>
+              1000+人已看
+            </view>
+          </swiper-item>
+        </swiper>
+        <!-- <view class="bottom">
+          <image class="tag" src="../../../images/icon/new_o.png"></image>
+          1000+人已看
+        </view> -->
+      </view>
+    </view>
+    <view class="bottom content-box">
+      <image class="bgimg" src="../../../images/bg_img/back_o.png"></image>
+      <view class="content-msg">
+        <view class="top">
+          <text class="title">人才推荐</text>
+          工作能力强 工作经验丰富
+        </view>
+        <swiper class="right-swiper" autoplay="{{true}}" circular="{{true}}" vertical="{{true}}">
+          <swiper-item>
+            <text>中国人寿保险股份有限公司</text>
+            <view class="bottom">
+              <image class="tag" src="../../../images/icon/new_o.png"></image>
+              1000+人已看
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <text>中国人寿保险股份有限公司</text>
+            <view class="bottom">
+              <image class="tag" src="../../../images/icon/new_o.png"></image>
+              1000+人已看
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <text>中国人寿保险股份有限公司</text>
+            <view class="bottom">
+              <image class="tag" src="../../../images/icon/new_o.png"></image>
+              1000+人已看
+            </view>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+  </view>
+</view>

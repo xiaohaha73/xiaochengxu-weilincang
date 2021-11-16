@@ -1,0 +1,98 @@
+<!-- pages/detail/detail.wxml -->
+<view class="container">
+    <view class="detail-box">
+        <view class="header">
+            <view class="title">
+                {{currentItem.infotype_name}}
+                <text>|</text>
+                {{detail.houseInfo}}
+            </view>
+            <view class="price">{{currentItem.price_str}}</view>
+            <view class="header-info">
+                <view class="info-left">
+                    <view class="time icon iconfont icon-chart-pie">{{currentItem.addtime}}</view>
+                    <view class="view-counter icon iconfont icon-browse">浏览12790次</view>
+                </view>
+                <view class="info-right">分享 | 收藏</view>
+            </view>
+        </view>
+        <view class="desc">
+            <view class="desc-option">
+                户型:
+                <text>{{detail.houseInfo}}</text>
+            </view>
+            <view class="desc-option">
+                环境:
+                <text>{{detail.house_layer}}</text>
+            </view>
+            <view class="desc-option">
+                价格:
+                <text>{{currentItem.price_str}}</text>
+            </view>
+            <view class="detail-option desc-option">
+                <view class="name">相关详情:</view> 
+                <text>{{detail.memo}}</text>
+            </view>
+            <view class="img-option" wx:if="{{currentItem.pic_url.length !== 0}}">
+                相关图片:
+                <image 
+                wx:for="{{currentItem.pic_url}}"
+                wx:key="key"
+                src="{{url + item}}" 
+                mode="aspectFill" />
+            </view>
+        </view>
+    </view>
+
+    <view class="contact">
+        <view class="title">联系方式</view>
+        <view class="location">
+            <view class="addr-left">
+                <view class="icon iconfont icon-map-filling"></view> <text>{{currentItem.county}}</text>
+            </view>
+            <view class="addr-right">
+                <text class="company">{{detail.companyname}}</text>
+                <text class="address">{{currentItem.address_str}}</text>
+                <text class="user">{{detail.linkman}}</text>
+            </view>
+        </view>
+        <view class="bottom">
+            <view class="bottom-left">
+                <image src="../../images/icon/user.png"></image>
+                <view class="user">
+                  <view class="user-name">{{detail.linkman}}</view>
+                  <view class="time">{{detail.sendtime}}</view>
+                </view>
+            </view>
+
+            <div class="bottom-right">
+              <view class="icon-group">
+                <image src="../../images/icon/phone.png"></image>
+                拨打电话
+              </view>
+              <view class="icon-group">
+                <image src="../../images/icon/chat.png"></image>
+                在线私聊
+              </view>
+            </div>
+        </view>
+    </view>
+
+     <view class="notes">提示:该信息由用户自行填写上传,据此交易请谨慎!</view>
+
+    <view class="bottom-btns">
+      <view class="btn icon-btn">
+          <text class="icon iconfont icon-home-filling"></text>
+          店铺
+      </view>
+      <view class="btn icon-btn">
+          <text class="icon iconfont icon-comment-filling"></text>
+          私聊
+      </view>
+      <view class="phone-btn icon-btn">
+          <text class="icon iconfont icon-home-filling"></text>
+          电话
+      </view>
+      <view class="deal-btn">立即付款</view>
+    </view>
+</view>

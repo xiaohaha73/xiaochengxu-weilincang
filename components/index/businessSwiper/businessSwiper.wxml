@@ -1,0 +1,25 @@
+<!--components/index/businessSwiper/businessSwiper.wxml-->
+<wxs src="../../../common/imgUrlFormat.wxs" module="format"/>
+<!-- 商家展示 -->
+<view class="rent-house">
+    <view class="rent-title">
+      <view class="title-left">
+        商家展示
+        <view class="welcome">欢迎广大商家入驻</view>
+      </view>
+      <text class="more">查看更多></text>
+    </view>
+    <scroll-view scroll-x="true">
+      <view class="scroll-item" wx:for="{{list}}" wx:key="key">
+        <image class="tag" src="../../../images/icon/com_new.png"></image>
+        <image class="item-img" src="{{url + format.urlFormat(item.pic_url)}}" lazy-load="true"></image>
+        <view class="desc">
+          <view class="title">{{item.content}}</view>
+          <view class="bottom">
+            <text>{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+

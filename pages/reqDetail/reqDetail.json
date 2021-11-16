@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "ReqList": "../../components/reqDetail/reqList"
+  },
+  "navigationBarTitleText": "生活求助",
+  "navigationBarBackgroundColor": "#c91723",
+  "navigationBarTextStyle": "white"
+}

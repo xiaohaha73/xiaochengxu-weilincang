@@ -1,0 +1,10 @@
+<!-- components/index/notesBar/notesBar.wxml -->
+<view class="notes">
+    <image src="../../../images/icon/gonggao.png"></image>
+    <swiper class="note-msg" vertical="true" circular="true" autoplay="true">
+        <swiper-item wx:for="{{noteList}}" wx:key="key" data-id="{{item.id}}" bind:tap="jumpHandle">
+            <view class="content">{{item.content}}</view>
+            <text class="time">{{item.addtime}}</text>
+        </swiper-item>
+    </swiper>
+</view>

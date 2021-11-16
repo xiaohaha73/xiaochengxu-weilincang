@@ -1,0 +1,14 @@
+.noMore {
+  width: 100%;
+  border-top: 18rpx solid #f6f6f6;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 30rpx;
+  margin-bottom: 100rpx;
+}
+
+.noMore .to-top {
+  width: 100%;
+  height: 110rpx;
+  margin: 60rpx auto;
+}

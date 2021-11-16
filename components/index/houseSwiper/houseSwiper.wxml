@@ -1,0 +1,23 @@
+<!--components/index/houseSwiper/houseSwiper.wxml-->
+<!-- 低价出租房 -->
+<view class="rent-house">
+    <view class="rent-title">
+      低价出租房
+      <text class="more">查看更多></text>
+    </view>
+    <scroll-view scroll-x="true">
+
+      <view class="scroll-item" wx:for="{{list}}" wx:key="key">
+        <image class="tag" src="../../../images/icon/house_rent.png" lazy-load="true"></image>
+        <image class="item-img" src="{{url + item.pic[0]}}"></image>
+        <view class="desc">
+          <view class="title">{{item.title}}</view>
+          <view class="bottom">
+            <text>{{item.price}}</text>
+            面积：{{item.house_area}}
+          </view>
+        </view>
+      </view>
+     
+    </scroll-view>
+  </view>

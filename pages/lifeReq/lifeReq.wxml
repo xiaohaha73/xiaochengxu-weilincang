@@ -1,0 +1,16 @@
+<!--pages/lifeReq/lifeReq.wxml-->
+<view class="container" style="background-color: #fffbf0;">
+  <view class="form-box">
+    <textarea placeholder="说点什么吧" maxlength="140" bindinput="countHandle"></textarea>
+    <text class="wordCount">{{wordCount}}/140</text>
+  </view>
+  <view class="img-box">
+    <view class="img-item" wx:for="{{imgList}}" wx:key="key">
+      <image src="{{serverUrl + item}}"></image>
+      <text bind:tap="delImgHandle" class="icon iconfont icon-delete-filling" data-index="{{index}}"></text>
+    </view>
+    <view class="upload-btn img-item" bind:tap="addImgHandle">+</view>
+  </view>
+
+  <button type="primary" class="submit-btn" bindtap="submitHandle">发表</button>
+</view>

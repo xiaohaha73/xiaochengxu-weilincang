@@ -1,0 +1,14 @@
+var urlFormat = function(path) {
+  // 路径是多个图片以逗号分隔，取第一张
+  if (path) {
+    var pathList = path.split(',');
+    // console.log(pathList[0])
+    return pathList[0]
+  }else { // 空路径
+    return ''
+  }
+}
+
+module.exports = {
+  urlFormat: urlFormat
+}

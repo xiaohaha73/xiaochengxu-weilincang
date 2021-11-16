@@ -1,0 +1,4 @@
+<!--pages/message/message.wxml-->
+<text>pages/message/message.wxml</text>
+<!-- 底部导航栏 -->
+<TabBar tabbar="{{ tabbar }}"></TabBar>

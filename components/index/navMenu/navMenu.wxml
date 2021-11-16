@@ -1,0 +1,31 @@
+<!--components/index/navMenu/navMenu.wxml-->
+  <swiper class="nav-menu">
+    <swiper-item>
+      <view class="menu-item" style="width: {{itemWidth}};">
+        <image src="../../../images/menu/01.png"></image>
+        求职招聘
+      </view>
+      <view class="menu-item" style="width: {{itemWidth}};">
+        <image src="../../../images/menu/02.png"></image>
+        房产信息
+      </view>
+      <view class="menu-item" style="width: {{itemWidth}};">
+        <image src="../../../images/menu/03.png"></image>
+        本地服务
+      </view>
+      <navigator url="/pages/sphzb/sphzb" class="menu-item" style="width: {{itemWidth}};">
+        <image src="../../../images/menu/04.png"></image>
+        视频直播
+      </navigator>
+    </swiper-item>
+    <swiper-item>
+      <view class="menu-item" style="width: {{itemWidth}};">
+        <image src="../../../images/menu/01.png"></image>
+        淘二手
+      </view>
+      <view class="menu-item" style="width: {{itemWidth}};">
+        <image src="../../../images/menu/02.png"></image>
+        二手车
+      </view>
+    </swiper-item>
+  </swiper>

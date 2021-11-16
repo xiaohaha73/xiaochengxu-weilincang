@@ -1,0 +1,68 @@
+<!--pages/sphzb/sphzb.wxml-->
+<!-- <view class='top-tip-view'>
+		<view class='top-tip-view-item' bindtap='to_zb'>
+			<image src='{{servsers}}/statics/images/sphzb.jpg'></image>
+		</view>
+	</view>
+<view class="add_cnt" wx:if="{{newDatas.length>0}}">
+  <view class="company">
+    <view class="company_cnts">
+      <view class="company_cnt" wx:for="{{newDatas}}" wx:for-item="jingpin" wx:key='id' bindtap="openActivity"
+        data-finderusername="{{jingpin.finderUserName}}" style="{{jingpin.bgcss}}" data-feedid="{{jingpin.feedId}}">
+        <view class="company_img">
+          <image src="{{servsers}}/{{jingpin.picarr[0]}}"></image>
+        </view>
+       
+        <view class="company_cnt_t">{{jingpin.title}}</view>
+      </view>
+    </view>
+  </view>
+ 
+</view>
+<view wx:else>
+  <view class="more"><text
+      style="font-size:30rpx;padding:8rpx 25rpx;color: #662d2d;border: solid 2rpx #662d2d;">暂无数据</text></view>
+</view> -->
+<!-- pages/videopage/videopage.wxml -->
+<view class="container" style="background-color: white;">
+  <view class="header">
+
+    <image class="logo" src="{{servsers + '/statics/images/sphzb.jpg'}}"></image>
+
+    <!-- <view class="header-left">
+      <image class="logo" src="{{servsers + '/statics/images/sphzb.jpg'}}"></image>
+      <view class="name">
+        <view class="video-name">微临沧服务</view>
+        <view class="address">云南 临沧</view>
+      </view>
+    </view> -->
+    <!-- <view class="header-right">
+      <button class="msg" size="mini" type="default">私信</button>
+      <button class="focus" size="mini" type="primary">关注</button>
+    </view> -->
+  </view>
+
+  <!-- <view class="desc">
+    <text class="company">临沧蓝涯科技有限公司</text>
+    <text>临沧生活服务</text>
+    <text>3个朋友关注</text>
+    <text style="color:#8691a4">公众号:微临沧</text>
+  </view> -->
+
+  <view class="tags">
+    <text class="tag" bind:tap="selectHandle" wx:for="{{tagList}}" wx:key="key" id="{{item.id}}">{{item.name}}</text>
+  </view>
+
+  <view class="video-list" wx:if="{{dataList.length !== 0}}">
+
+    <view bindtap="openActivity" data-finderusername="{{item.finderUserName}}" style="{{item.bgcss}}"
+      data-feedid="{{item.feedId}}" wx:for="{{dataList}}" wx:key="key" class="video-item"
+      style="width: {{itemWidth}};">
+      <image src="{{servsers}}/{{item.picarr[0]}}" lazy-load=""></image>
+      <view class="video-title">{{item.title}}</view>
+    </view>
+  </view>
+
+  <view class="nomore" wx:else>暂无更多内容~</view>
+
+</view>

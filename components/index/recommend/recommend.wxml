@@ -1,0 +1,37 @@
+<!--components/index/recommend/recommend.wxml-->
+<!-- 首页推荐列表组件 -->
+<view class="recommend">
+    <view class="tittle">
+      推荐信息
+      <view class="tag">置顶</view>
+    </view>
+    <view class="recommend-list">
+      <view class="recommend-item" wx:for="{{newDatas}}" wx:key="key" id="{{index}}" bind:tap="showDetail">
+        <view class="recommend-header">
+          <text class="header-tag">{{item.infotype_name}}</text>
+          {{item.title}}
+        </view>
+        <view class="recommend-bottom">
+          <view class="bottom-left">
+            <view class="bottom-tag">置顶</view>
+            {{item.price_str}}
+          </view>
+          <view class="bottom-right">{{item.country}}</view>
+        </view>
+      </view>
+
+      <!-- <view class="recommend-item">
+        <view class="recommend-header">
+          <text class="header-tag">全职招聘</text>
+          配置为服务器域名后，可与小程序进行网络通信
+        </view>
+        <view class="recommend-bottom">
+          <view class="bottom-left">
+            <view class="bottom-tag">置顶</view>
+            4000-5000元
+          </view>
+          <view class="bottom-right">临翔区</view>
+        </view>
+      </view> -->
+    </view>
+  </view>

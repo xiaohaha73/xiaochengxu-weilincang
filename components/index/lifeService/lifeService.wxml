@@ -1,0 +1,35 @@
+<!--components/index/lifeService/lifeService.wxml-->
+<view class="life-service">
+    <view class="left-items">
+        <view class="item top">
+            <image src="../../../images/bg_img/life_sd.png"></image>
+            <view class="content">
+                <text class="title">水电 维修</text>
+                <text class="bottom" style="border-bottom: 2rpx solid #dfc2fd;">您身边家修好管家</text>
+            </view>
+        </view>
+        <view class="item bottom">
+            <image src="../../../images/bg_img/life_jz.png"></image>
+            <view class="content">
+                <text class="title">家政服务</text>
+                <text class="bottom" style="border-bottom: 2rpx solid #fecd6a;">"净"我所能 服务爱家</text>
+            </view>
+        </view>
+    </view>
+    <view class="right-items">
+        <view class="item top">
+            <image src="../../../images/bg_img/life_bj.png"></image>
+            <view class="content">
+                <text class="title">搬家 拉货</text>
+                <text class="bottom" style="border-bottom: 2rpx solid #ccdefe;">全程呵护 放心托付</text>
+            </view>
+        </view>
+        <view class="item bottom">
+            <image src="../../../images/bg_img/life_jj.png"></image>
+            <view class="content">
+                <text class="title">车辆急救</text>
+                <text class="bottom" style="border-bottom: 2rpx solid #b0dbe4;">不负信任 不违使命</text>
+            </view>
+        </view>
+    </view>
+</view>

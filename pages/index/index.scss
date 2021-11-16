@@ -1,0 +1,92 @@
+.nav-bar {
+    position: relative;
+    padding: 0;
+
+    image {
+        display: block;
+        max-height: 175px;
+    }
+}
+
+.search-bar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10rpx 20rpx 20rpx 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+
+    .bar-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .search {
+            margin-left: 20rpx;
+            color: #6b6b6b;
+            font-weight: bold;
+            height: 69rpx;
+            background: #f6f6f6;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 24rpx;
+            width: 322rpx;
+            border-radius: 34rpx;
+
+            text {
+                margin-top: 18rpx;
+                margin-left: 30rpx;
+            }
+        }
+
+        .location {
+            font-size: 26rpx;
+            font-weight: bold;
+            color: #403b23;
+        }
+    }
+
+    .bar-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 26rpx;
+        font-weight: bold;
+        color: #403b23;
+
+        .service {
+            margin-right: 20rpx;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                right: -20rpx;
+                bottom: 23rpx;
+                height: 22rpx;
+                width: 2rpx;
+                background-color: #b1b1b1;
+            }
+        }
+
+        .phone {
+            margin-left: 20rpx;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+<!--components/index/noMore/noMore.wxml-->
+<view class="noMore">
+    <image class="to-top" bind:tap="topTopHandle" src="../../../images/bg_img/to_top.png"></image>
+</view>

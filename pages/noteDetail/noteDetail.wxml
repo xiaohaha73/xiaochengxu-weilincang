@@ -1,0 +1,79 @@
+<view class="container">
+  <view class="show-item">
+    <view class="header">
+      <image src="{{topicDetail.avatarUrl}}"></image>
+      <view class="header-right">
+        <view class="nick">{{topicDetail.nickName}}</view>
+        <view class="info">{{topicDetail.addtime}}</view>
+      </view>
+    </view>
+    <view class="main">
+      <view class="title">{{topicDetail.content}}</view>
+      <view class="blog-img" wx:if="{{topicDetail.pic !== 'undefined'}}">
+        <image wx:for="{{imagesList}}" src="{{imgServerUrl + item}}" mode="aspectFill" style="width:{{imgWidth}};height:{{imgHeight}}" data-blogIndex="1"></image>
+        <!-- 占位的盒子 -->
+        <view wx:if="{{isFill}}" style="width:{{imgWidth}};height:{{imgHeight}}" />
+      </view>
+      <view class="reply-btns">
+        <view class="dianzan">
+          <text class="{{topicDetail.isdianzan?'icon iconfont icon-good active':'icon iconfont icon-good'}}" bind:tap="dianzanHandle"/>
+          <text class="count">{{topicDetail.dzcount}}</text>
+        </view>
+        <view class="pinlun">
+          <text class="icon iconfont icon-comment" bind:tap="commentHandle"/>
+          <text class="count">{{topicDetail.reply.length}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 评论列表 -->
+    <view class="comment" wx:if="{{topicDetail.reply.length !== 0}}">
+      <view class="comment-tittle">评论({{topicDetail.reply.length}})</view>
+      <view class="comment-detail" wx:for="{{topicDetail.reply}}">
+        <view class="comment-left">
+          <image src="{{item.avatarUrl}}"></image>
+        </view>
+        <view class="comment-right">
+          <view class="header">
+            <view class="nick">{{item.nickName}}</view>
+            <view class="info">{{item.addtime}}</view>
+          </view>
+          <view class="comment-text">{{item.content}}</view>
+          <view class="comment-btns">
+            <view class="icon iconfont icon-good"></view>
+            <view class="icon iconfont icon-comment" bind:tap="commentHandle"/>
+          </view>
+          <!-- 这条评论的回复列表 -->
+          <!-- <view class="reply-list">
+            <view class="reply">
+              <view class="reply-text">
+                <view class="user">阿伟</view>
+                :彬彬就是逊啦!
+              </view>
+              <view class="reply-btns">
+                <view class="icon iconfont icon-good" />
+                <view class="icon iconfont icon-comment" />
+              </view>
+            </view>
+            <view class="reply">
+              <view class="reply-text">
+                <view class="user">杰哥</view>
+                回复
+                <view class="user">阿伟</view>
+                :这么说你很勇哦。
+              </view>
+              <view class="reply-btns">
+                <view class="icon iconfont icon-good" />
+                <view class="icon iconfont icon-comment" />
+              </view>
+            </view>
+          </view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 评论输入框 -->
+<view class="comment-input" wx:if="{{showInput}}" style="bottom: {{keyBroadHeight}};">
+  <input placeholder="请输入评论内容" bindfocus="setKeyBoard" bindblur="closeKeyBoard" cursor-spacing="20" adjust-position="{{false}}" auto-focus="true" bindconfirm="sendHandle"></input>
+  <button size="mini" type="primary">评论</button>
+</view>

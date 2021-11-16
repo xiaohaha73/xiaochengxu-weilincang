@@ -1,0 +1,253 @@
+.detail-box {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40rpx 30rpx 30rpx 30rpx;
+  background-color: white;
+}
+
+.detail-box .header {
+  width: 100%;
+  border-bottom: 2rpx solid #c3cac3;
+  padding-bottom: 30rpx;
+}
+
+.detail-box .header .title {
+  margin-top: 30rpx;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+.detail-box .header .title text {
+  color: #c3cac3;
+}
+
+.detail-box .header .price {
+  margin-top: 30rpx;
+  color: #f24c4b;
+  font-weight: bold;
+}
+
+.detail-box .header .header-info {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #c3cac3;
+}
+
+.detail-box .header .header-info .info-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.detail-box .header .header-info .info-left view {
+  font-size: 20rpx;
+}
+
+.detail-box .header .header-info .info-left .view-counter {
+  margin-left: 40rpx;
+}
+
+.detail-box .header .header-info .info-right {
+  font-size: 22rpx;
+}
+
+.detail-box .desc {
+  width: 100%;
+}
+
+.detail-box .desc .desc-option {
+  margin-top: 40rpx;
+  color: #777777;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.detail-box .desc .desc-option text {
+  color: #000000;
+  margin-left: 34rpx;
+}
+
+.detail-box .desc .detail-option .name {
+  white-space: nowrap;
+}
+
+.detail-box .desc .img-option {
+  margin-top: 40rpx;
+  color: #777777;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-box .desc .img-option image {
+  width: 100%;
+  max-height: 500rpx;
+  margin-top: 30rpx;
+}
+
+.contact {
+  width: 100%;
+  padding: 30rpx;
+  background-color: white;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #c3cac3;
+}
+
+.contact .title {
+  padding: 20rpx 0 20rpx;
+  border-bottom: 2rpx solid #c3cac3;
+}
+
+.contact .location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40rpx 0 40rpx 0;
+  height: 100rpx;
+  border-bottom: 2rpx solid #c3cac3;
+}
+
+.contact .location .addr-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 26rpx;
+  padding-right: 20rpx;
+}
+
+.contact .location .addr-left .icon {
+  margin-right: 20rpx;
+  color: #f01312;
+}
+
+.contact .location .addr-right {
+  border-left: 4rpx solid #c3cac3;
+  padding-left: 20rpx;
+  color: #777777;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .location .addr-right .company {
+  color: #000000;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+
+.contact .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 0 30rpx 0;
+}
+
+.contact .bottom .bottom-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact .bottom .bottom-left image {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+
+.contact .bottom .bottom-left .user {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .bottom .bottom-left .user .time {
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #777777;
+}
+
+.contact .bottom .bottom-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact .bottom .bottom-right .icon-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  font-weight: bold;
+  padding: 0 20rpx 0 20rpx;
+}
+
+.contact .bottom .bottom-right .icon-group image {
+  height: 65rpx;
+  width: 65rpx;
+  margin-bottom: 20rpx;
+}
+
+.notes {
+  background-color: #fefced;
+  color: #da8d67;
+  font-size: 26rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 89rpx;
+}
+
+.bottom-btns {
+  width: 100%;
+  height: 89rpx;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.bottom-btns .icon-btn {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+}
+
+.bottom-btns .icon-btn .icon {
+  color: #f64c4c;
+  font-size: 30rpx;
+}
+
+.bottom-btns .btn {
+  position: relative;
+}
+
+.bottom-btns .btn::after {
+  content: '';
+  position: absolute;
+  height: 54rpx;
+  width: 2rpx;
+  background-color: #777777;
+  bottom: 16rpx;
+  right: 0;
+}
+
+.bottom-btns .deal-btn {
+  background-color: #f84c4c;
+  color: white;
+  text-align: center;
+  height: 89rpx;
+  width: 250rpx;
+  line-height: 84rpx;
+}

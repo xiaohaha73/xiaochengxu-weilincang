@@ -1,0 +1,87 @@
+.recommend {
+    width: 100%;
+    padding: 20rpx;
+    box-sizing: border-box;
+    background-color: white;
+    border-top: 18rpx solid #f6f6f6;
+
+    .tittle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 36rpx;
+        color: #202020;
+
+        .tag {
+            padding: 6rpx 8rpx 6rpx 8rpx;
+            font-size: 22rpx;
+            color: white;
+            background-color: #62d4b0;
+        }
+    }
+
+    .recommend-list {
+        margin-top: 20rpx;
+        box-sizing: border-box;
+        width: 100%;
+        box-shadow: 2rpx 2rpx 2rpx #c3cac3;
+
+        .recommend-item {
+            height: 180rpx;
+            width: 100%;
+            background-color: #f1fff0;
+            padding: 24rpx;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-bottom: 4rpx solid #c3cac3;
+
+            .recommend-header {
+                font-size: 26rpx;
+
+                .header-tag {
+                    border: 4rpx solid #89cd9e;
+                    font-size: 18rpx;
+                    display: inline-block;
+                    color: #89cd9e;
+                    height: 9rpx;
+                }
+            }
+
+            .recommend-bottom {
+                // margin-top: 20rpx;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .bottom-left {
+                    display: flex;
+                    flex-direction: row;
+                    color: #ec5453;
+                    align-items: center;
+                    font-weight: bold;
+
+                    .bottom-tag {
+                        background-color: #ec5453;
+                        font-size: 18rpx;
+                        color: white;
+                        border-radius: 17rpx;
+                        height: 24rpx;
+                        padding: 3rpx 10rpx 3rpx 10rpx;
+                        margin-right: 10rpx;
+                        font-weight: normal;
+                    }
+                }
+
+                .bottom-right {
+                    color: #c3cac3;
+                    font-size: 26rpx;
+                }
+            }
+        }
+    }
+
+}

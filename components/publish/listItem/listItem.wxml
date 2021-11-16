@@ -1,0 +1,10 @@
+<!-- components/publish/listItem/listItem.wxml -->
+<view class="container">
+  <view class="title">生活求助</view>
+  <view class="options-list">
+    <!-- <view class="option-item right-border" style="width: {{itemWidth}};">求助信息</view>
+    <view class="option-item right-border" style="width: {{itemWidth}};">求助信息</view>
+    <view class="option-item right-border" style="width: {{itemWidth}};">求助信息</view> -->
+    <navigator url="/pages/lifeReq/lifeReq" class="option-item right-border" style="width: {{itemWidth}};">求助信息</navigator>
+  </view>
+</view>

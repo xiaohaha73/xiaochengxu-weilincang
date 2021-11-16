@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Item":"../../components/publish/listItem/listItem"
+  },
+  "navigationBarTitleText": "选择发布类型",
+  "backgroundColor": "#f6f6f6"
+}

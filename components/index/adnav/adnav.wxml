@@ -1,0 +1,30 @@
+<!--components/index/adnav/adnav.wxml-->
+<view class="ad-content">
+    <view class="content-left content-box">
+      <view class="title">领优惠券 抽大奖</view>
+      <view class="desc">天天抽奖 每月有巨奖</view>
+      <view class="img-box">
+        <image class="ad-img" src="https://new.lincangq.cn/upload/2021/admin/20211104174317.jpg"></image>
+      </view>
+      
+    </view>
+    <view class="content-right">
+      <view class="top content-box">
+        <view class="left">
+          <view style="display: flex; align-items: center;">
+            <view class="title">直播带岗</view>
+            <image class="player" src="../../../images/zb_video.png"></image>
+          </view>
+          <view class="desc">围观好工作</view>
+        </view>
+        <image class="right-img" src="../../../images/zb_job.png"></image>
+      </view>
+      <view class="bottom content-box" style="padding-top: 30rpx;">
+        <view class="left">
+          <view class="title">买好房</view>
+          <view class="desc">买房更省心</view>
+        </view>
+        <image class="right-img" src="../../../images/buy_house.png"></image>
+      </view>
+    </view>
+  </view>

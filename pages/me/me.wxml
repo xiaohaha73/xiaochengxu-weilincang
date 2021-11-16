@@ -1,0 +1,111 @@
+<!-- pages/me/me.wxml -->
+<view class="back-bar"></view>
+<view class="user-card position-box">
+  <view class="user-info">
+    <view class="info-left">
+      <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+      <text class="nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="info-right">签到积分+</view>
+  </view>
+  <view class="status">
+    <view class="count-item">
+      <view class="item-header">
+        <text class="number">2</text>
+        次
+      </view>
+      <view class="item-bottom">发布次数</view>
+    </view>
+    <view class="count-item">
+      <view class="item-header">
+        <text class="number">2</text>
+        个
+      </view>
+      <view class="item-bottom">积分</view>
+    </view>
+    <view class="count-item">
+      <view class="item-header">
+        <text class="number">0.00</text>
+        元
+      </view>
+      <view class="item-bottom">账户</view>
+    </view>
+  </view>
+  <view class="msg">
+    <view class="msg-btn">我的消息</view>
+    <view class="notes">
+      生活圈消息通知次数
+      <text style="color:#7bacd7;">1</text>
+      次
+    </view>
+    <view class="add-btn">+增加</view>
+  </view>
+</view>
+<view class="position-box info-box">
+  <view class="title">我的消息</view>
+  <view class="option-list">
+    <navigator class="option" url="/pages/reqDetail/reqDetail">生活求助</navigator>
+  </view>
+  <view class="option-list">
+    <navigator class="option" url="/pages/reqDetail/reqDetail">生活求助</navigator>
+  </view>
+</view>
+<!-- 九宫格 -->
+<view class="position-box menu">
+  <view class="menu-item" style="width: {{itemWidth}};height: {{itemWidth}};">
+    <view class="item-box">
+      <image src="../../images/menu/04.png"></image>
+      我的发布信息
+    </view>
+  </view>
+  <view class="menu-item" style="width: {{itemWidth}};height: {{itemWidth}};">
+    <view class="item-box">
+      <image src="../../images/menu/02.png"></image>
+      我的个人资料
+    </view>
+  </view>
+  <view class="menu-item" style="width: {{itemWidth}};height: {{itemWidth}};">
+    <view class="item-box">
+      <image src="../../images/menu/03.png"></image>
+      我的企业店铺
+    </view>
+  </view>
+  <view class="menu-item" style="width: {{itemWidth}};height: {{itemWidth}};">
+    <view class="item-box">
+      <image src="../../images/menu/01.png"></image>
+      我的招聘信息
+    </view>
+  </view>
+  <view class="menu-item" style="width: {{itemWidth}};height: {{itemWidth}};">
+    <view class="item-box">
+      <image src="../../images/menu/02.png"></image>
+      我的求职信息
+    </view>
+  </view>
+  <view class="menu-item" style="width: {{itemWidth}};height: {{itemWidth}};">
+    <view class="item-box">
+      <image src="../../images/menu/04.png"></image>
+      我的收藏信息
+    </view>
+  </view>
+  <view class="menu-item" style="width: {{itemWidth}};height: {{itemWidth}};">
+    <view class="item-box">
+      <image src="../../images/menu/01.png"></image>
+      我的房产信息
+    </view>
+  </view>
+  <view class="menu-item" style="width: {{itemWidth}};height: {{itemWidth}};">
+    <view class="item-box">
+      <image src="../../images/menu/04.png"></image>
+      我的求助信息
+    </view>
+  </view>
+  <view class="menu-item" style="width: {{itemWidth}};height: {{itemWidth}};">
+    <view class="item-box">
+      <image src="../../images/menu/03.png"></image>
+      我的促销信息
+    </view>
+  </view>
+</view>
+<!-- 底部导航栏 -->
+<TabBar tabbar="{{ tabbar }}"></TabBar>

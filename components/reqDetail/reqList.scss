@@ -1,0 +1,48 @@
+.reqList {
+    padding: 20rpx;
+    width: 100%;
+    box-sizing: border-box;
+    .item {
+        background-color: #ffffff;
+        border-radius: 14rpx;
+        padding: 18rpx;
+        box-sizing: border-box;
+        width: 100%;
+        .item-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            button {
+                color: black;
+            }
+        }
+
+        .item-bottom {
+            display: flex;
+            flex-direction: column;
+            color: #666666;
+            border-top: #d3d3d3 solid 2rpx;
+            font-size: 28rpx;
+            .content {
+                margin: 20rpx 0 20rpx 0;
+                // text-align: left;
+            }
+            
+            .count {
+                color: #ff0000;
+            }
+        }
+    }
+
+    .jump {
+        width: 50%;
+        margin: 200rpx auto;
+        text-align: center;
+        color: #bdbcc1;
+        padding: 18rpx 20rpx;
+        border: 4rpx solid #bdbcc1;
+        background-color: white;
+        border-radius: 30rpx;
+    }
+}

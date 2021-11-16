@@ -1,0 +1,52 @@
+<!-- components/index/quickService/quickService.wxml -->
+<view class="quick-service">
+  <view class="service-title">
+    <text>生活服务</text>
+    <navigator class="more">查看更多></navigator>
+  </view>
+  <view class="main">
+    <view class="main-top">
+      <image class="title" src="../../../images/icon/life_title1.png"></image>
+      <image class="new" src="../../../images/icon/new_t.png"></image>
+      <text>1000+人已看</text>
+    </view>
+    <view class="main-bottom">
+      <view class="bottom-left shadow-box">
+        <image class="tag" src="../../../images/icon/life_yh.png"></image>
+        <image class="item-img" src="https://new.lincangq.cn/upload/2021/admin/20210928110913.jpg"></image>
+        <view class="desc">
+          <view class="title">忙角农家自建房...666666666666666666666666</view>
+          <view class="bottom">
+            <text>￥500.00</text>
+            面积：52m
+          </view>
+        </view>
+
+      </view>
+      <view class="bottom-right">
+        <view class="right-top right-item shadow-box">
+          <view class="left-show">
+            <image class="left-img" src="https://new.lincangq.cn/upload/2021/news/16358181811365027299.jpg"></image>
+            <image class="tag" src="../../../images/icon/life_yh.png"></image>
+          </view>
+          <view class="right-show">
+            <view class="title">注册公司、代缴社保、公司变更...</view>
+            <view class="price">￥6000.00</view>
+            <view class="company">临沧新泰物业有限公司</view>
+          </view>
+        </view>
+        <view class="right-bottom right-item shadow-box">
+          <view class="left-show">
+            <image class="left-img" src="https://new.lincangq.cn/upload/2021/news/1635734344992180119.jpg"></image>
+            <image class="tag" src="../../../images/icon/life_yh.png"></image>
+          </view>
+          <view class="right-show">
+            <view class="title">注册公司、代缴社保、公司变更...</view>
+            <view class="price">￥6000.00</view>
+            <view class="company">临沧新泰物业有限公司</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

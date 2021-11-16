@@ -1,0 +1,193 @@
+
+// 点赞或评论选中样式
+.active {
+    color: #4d8dff;
+}
+
+.show-item {
+    width: 100%;
+    padding: 30rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+    background-color: white;
+    // margin-bottom: 20rpx;
+
+    .header {
+        height: 100rpx;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        >image {
+            width: 80rpx;
+            height: 80rpx;
+            border-radius: 50%;
+        }
+
+        .header-right {
+            margin-left: 30rpx;
+            font-size: 28rpx;
+
+            .info {
+                font-size: 26rpx;
+                margin-top: 10rpx;
+                color: #787878;
+            }
+        }
+    }
+
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        .title {
+            font-size: 28rpx;
+            margin-bottom: 20rpx;
+        }
+
+        .blog-img {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            image {
+                height: 300rpx;
+                margin-bottom: 5rpx;
+            }
+        }
+
+        .reply-btns {
+            margin-top: 20rpx;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            
+            .pinlun {
+                margin-left: 20rpx;
+            }
+
+            .icon {
+                font-size: 40rpx;
+            }
+        }
+
+    }
+
+    .comment {
+        width: 100%;
+        margin-top: 30rpx;
+
+        .comment-tittle {
+            height: 50rpx;
+            line-height: 50rpx;
+            border-left: 4rpx solid #74c1de;
+            margin-left: -30rpx;
+            padding-left: 30rpx;
+        }
+
+        .comment-detail {
+            margin-top: 30rpx;
+            display: flex;
+            flex-direction: row;
+            .comment-left {
+                width: 65rpx;
+                height: 65rpx;
+
+                image {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            .comment-right {
+                margin-left: 20rpx;
+                padding-bottom: 20rpx;
+                flex: 1;
+                border-bottom: 1px solid #f6f6f6;
+
+                .header {
+                    height: 30rpx;
+                    color: #787878;
+
+                    .nick {
+                        font-size: 26rpx;
+                    }
+
+                    .info {
+                        font-size: 28rpx;
+                        margin-left: 20rpx;
+                    }
+                }
+
+                .comment-text {
+                    font-size: 28rpx;
+                    margin-bottom: 20rpx;
+                }
+                .comment-btns {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 20rpx;
+                    .icon:nth-child(2) {
+                        margin-left: 30rpx;
+                    }
+                }
+
+                .reply-list {
+                    width: 100%;
+                    background-color: #f6f6f6;
+                    font-size: 28rpx;
+
+                    .reply {
+                        padding: 10rpx 20rpx 18rpx 10rpx;
+                        display: flex;
+                        flex-direction: column;
+                        .reply-text {
+                            display: flex;
+                            flex-direction: row;
+
+                            .user {
+                                color: #74c1de;
+                                padding: 0 10rpx 0 10rpx;
+                            }
+                        }
+                        
+                        .reply-btns {
+                            margin-top: 15rpx;
+                            display: flex;
+                            margin-left: 40rpx;
+                            flex-direction: row;
+                            .icon:nth-child(2) {
+                                margin-left: 30rpx;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.comment-input {
+    // width: 100%;
+    background-color: white;
+    padding: 20rpx;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    input {
+        height: 56rpx;
+        background-color: #f6f6f6;
+        flex: 1;
+        margin-right: 20rpx;
+        padding-left: 20rpx;
+    }
+}

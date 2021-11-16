@@ -1,0 +1,123 @@
+.job-recommend {
+  width: 100%;
+  background-color: white;
+  border-top: 18rpx solid #f6f6f6;
+  box-sizing: border-box;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.job-recommend .bgimg {
+  width: 100%;
+  height: 100%;
+}
+
+.job-recommend .left {
+  flex: 1;
+  margin-right: 18rpx;
+  height: 380rpx;
+}
+
+.job-recommend .right {
+  flex: 1;
+  margin-left: 18rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-recommend .right .top {
+  flex: 1;
+  margin-bottom: 15rpx;
+}
+
+.job-recommend .right .bottom {
+  flex: 1;
+  margin-top: 15rpx;
+}
+
+.job-recommend .content-box {
+  position: relative;
+}
+
+.job-recommend .content-box .content-msg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20rpx;
+  color: white;
+}
+
+.job-recommend .content-box .content-msg .top {
+  display: flex;
+  flex-direction: column;
+  font-size: 21rpx;
+}
+
+.job-recommend .content-box .content-msg .top .title {
+  font-size: 28rpx;
+  font-weight: bold;
+  padding-bottom: 10rpx;
+}
+
+.job-recommend .content-box .content-msg .bottom {
+  display: flex;
+  font-size: 18rpx;
+  align-items: center;
+}
+
+.job-recommend .content-box .content-msg .bottom .tag {
+  height: 30rpx;
+  width: 40rpx;
+}
+
+.job-recommend .content-box .content-msg .left-swiper {
+  width: 100%;
+  height: 270rpx;
+}
+
+.job-recommend .content-box .content-msg .left-swiper swiper-item {
+  width: 100%;
+  padding: 18rpx 18rpx 18rpx 0;
+  box-sizing: border-box;
+}
+
+.job-recommend .content-box .content-msg .left-swiper swiper-item text {
+  display: block;
+  max-width: 240rpx;
+  line-height: 23rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 21rpx;
+}
+
+.job-recommend .content-box .content-msg .right-swiper {
+  width: 100%;
+  height: 72rpx;
+}
+
+.job-recommend .content-box .content-msg .right-swiper swiper-item {
+  font-size: 21rpx;
+}
+
+.job-recommend .content-box .content-msg .right-swiper swiper-item text {
+  display: block;
+  max-width: 240rpx;
+  line-height: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 21rpx;
+  padding-bottom: 0;
+}
+
+.job-recommend .content-box .content-msg .right-swiper swiper-item .bottom {
+  margin-top: 10rpx;
+}

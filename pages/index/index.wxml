@@ -1,0 +1,46 @@
+<!-- index.wxml -->
+<view class="container">
+  <!-- 顶部标题栏背景图 -->
+  <view class="nav-bar">
+    <image src="https://new.lincangq.cn/images/wechat/top_ruzhu.gif" mode="aspectFill" style="width:{{windowWidth}}"></image>
+  </view>
+  <view class="search-bar">
+    <view class="bar-left">
+      <view class="location">
+        临翔区
+        <text class="icon iconfont icon-arrow-down-bold"></text>
+      </view>
+      <view class="search">
+        <text class="icon iconfont icon-zoom-in"></text>
+        找工作、找房子...
+      </view>
+    </view>
+    <view class="bar-right">
+      <text class="service">客服</text>
+      <text class="phone">电话</text>
+    </view>
+  </view>
+</view>
+<!-- 菜单栏 -->
+<NavMenu/>
+<!-- 公告栏 -->
+<NotesBar />
+<!-- 广告栏 -->
+<AdNav />
+<!-- 低价出租房 -->
+<RentHouseSwiper list="{{rentHouse}}"/>
+<!-- 岗位推荐 -->
+<JobNav />
+<!-- 推荐栏 -->
+<Recommend />
+<!-- 生活服务分栏 -->
+<LifeService />
+<!-- 生活服务 -->
+<QuickService />
+<!-- 商家展示 -->
+<BusinessSwiper list="{{company}}"/>
+<!-- 没有更多了 -->
+<NoMore/>
+
+<!-- 底部导航栏 -->
+<TabBar tabbar="{{ tabbar }}"></TabBar>

@@ -1,0 +1,116 @@
+.job-recommend {
+    width: 100%;
+    background-color: white;
+    border-top: 18rpx solid #f6f6f6;
+    box-sizing: border-box;
+    padding: 30rpx;
+    display: flex;
+    flex-direction: row;
+    .bgimg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .left {
+        flex: 1;
+        margin-right: 18rpx;
+        height: 380rpx;
+    }
+
+    .right {
+        flex: 1;
+        margin-left: 18rpx;
+        display: flex;
+        flex-direction: column;
+
+        .top {
+            flex: 1;
+            margin-bottom: 15rpx;
+        }
+
+        .bottom {
+            flex: 1;
+            margin-top: 15rpx;
+        }
+    }
+
+    .content-box {
+        position: relative;
+
+        .content-msg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 99;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 20rpx;
+            color: white;
+
+            .top {
+                display: flex;
+                flex-direction: column;
+                font-size: 21rpx;
+                .title {
+                    font-size: 28rpx;
+                    font-weight: bold;
+                    padding-bottom: 10rpx;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                font-size: 18rpx;
+                align-items: center;
+                .tag {
+                    height: 30rpx;
+                    width: 40rpx;
+                }
+            }
+
+            .left-swiper {
+                width: 100%;
+                height: 270rpx;
+                swiper-item {
+                    width: 100%;
+                    padding: 18rpx 18rpx 18rpx 0;
+                    box-sizing: border-box;
+                    text {
+                        display: block;
+                        max-width: 240rpx;
+                        line-height: 23rpx;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 21rpx;
+                    }
+                }
+            }
+
+            .right-swiper {
+                width: 100%;
+                height: 72rpx;
+                swiper-item {
+                    font-size: 21rpx;
+                    text {
+                        display: block;
+                        max-width: 240rpx;
+                        line-height: 24rpx;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 21rpx;
+                        padding-bottom: 0;
+                    }
+
+                    .bottom {
+                        margin-top: 10rpx;
+                    }
+                }
+            }
+        }
+    }
+}

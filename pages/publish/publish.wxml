@@ -1,0 +1,4 @@
+<!--pages/publish/publish.wxml-->
+<view style="margin-top: 18rpx;">
+  <Item />
+</view>

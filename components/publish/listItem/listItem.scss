@@ -1,0 +1,34 @@
+.title {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20rpx;
+    font-size: 26rpx;
+    font-weight: bold;
+}
+
+.options-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 2rpx solid #e8e8e8;
+    border-bottom: 2rpx solid #e8e8e8;
+    .option-item {
+        box-sizing: border-box;
+        text-align: center;
+        padding: 26rpx 0 26rpx 0;
+        font-size: 26rpx;
+    }
+
+    .right-border {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 36rpx;
+            width: 2rpx;
+            background-color: #e8e8e8;
+            right: 0;
+            bottom: 23rpx;
+        }
+    }
+}

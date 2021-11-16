@@ -1,0 +1,16 @@
+{
+  "usingComponents": {
+    "TabBar":"../../components/tabbar/tabbar",
+    "Recommend":"../../components/index/recommend/recommend",
+    "JobNav":"../../components/index/jobnav/jobnav",
+    "RentHouseSwiper":"../../components/index/houseSwiper/houseSwiper",
+    "AdNav":"../../components/index/adnav/adnav",
+    "NotesBar":"../../components/index/notesBar/notesBar",
+    "NavMenu":"../../components/index/navMenu/navMenu",
+    "LifeService":"../../components/index/lifeService/lifeService",
+    "QuickService":"../../components/index/quickService/quickService",
+    "BusinessSwiper":"../../components/index/businessSwiper/businessSwiper",
+    "NoMore":"../../components/index/noMore/noMore"
+  },
+  "navigationStyle": "custom"
+}

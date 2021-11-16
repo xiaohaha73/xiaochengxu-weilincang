@@ -1,0 +1,278 @@
+.detail-box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40rpx 30rpx 30rpx 30rpx;
+    background-color: white;
+
+    .header {
+        width: 100%;
+        border-bottom: 2rpx solid #c3cac3;
+        padding-bottom: 30rpx;
+
+        .title {
+            margin-top: 30rpx;
+            color: #1c1c1c;
+            font-weight: bold;
+
+            text {
+                color: #c3cac3;
+            }
+        }
+
+        .price {
+            margin-top: 30rpx;
+            color: #f24c4b;
+            font-weight: bold;
+        }
+
+        .header-info {
+            margin-top: 30rpx;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #c3cac3;
+
+            .info-left {
+                display: flex;
+                flex-direction: row;
+
+                view {
+                    font-size: 20rpx;
+                }
+
+                .view-counter {
+                    margin-left: 40rpx;
+                }
+            }
+
+            .info-right {
+                font-size: 22rpx;
+            }
+        }
+    }
+
+    .desc {
+        width: 100%;
+        padding-bottom: 24rpx;
+        .desc-option {
+            margin-top: 40rpx;
+            color: #777777;
+            font-size: 24rpx;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            position: relative;
+            text {
+                color: #000000;
+                margin-left: 34rpx;
+            }
+        }
+
+        .detail-option {
+            .name {
+                white-space: nowrap;
+            }
+
+            .detail-text {
+                /*关键属性（必须有的）  */
+                display: -webkit-box;
+                /*规定子元素的排列方向 */
+                -webkit-box-orient: vertical;
+                /*限制文本显示的行数  */
+                -webkit-line-clamp: 2;
+                /*实现多余的文字隐藏并用省略号来代表被隐藏的文字  */
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .showBtn {
+                color: #769fcb;
+                display: inline-block;
+                height: 32rpx;
+                position: absolute;
+                left: 50%;
+                bottom: -28rpx;
+                transform: translateX(-50%);
+            }
+        }
+
+        .img-option {
+            margin-top: 40rpx;
+            color: #777777;
+            font-size: 24rpx;
+            display: flex;
+            flex-direction: column;
+
+            image {
+                width: 100%;
+                max-height: 500rpx;
+                margin-top: 30rpx;
+            }
+        }
+    }
+}
+
+.contact {
+    width: 100%;
+    padding: 30rpx;
+    background-color: white;
+    margin-top: 20rpx;
+    box-sizing: border-box;
+    border-bottom: 2rpx solid #c3cac3;
+
+    .title {
+        padding: 20rpx 0 20rpx;
+        border-bottom: 2rpx solid #c3cac3;
+    }
+
+    .location {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 40rpx 0 40rpx 0;
+        height: 100rpx;
+        border-bottom: 2rpx solid #c3cac3;
+
+        .addr-left {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 26rpx;
+            padding-right: 20rpx;
+
+            .icon {
+                margin-right: 20rpx;
+                color: #f01312;
+            }
+        }
+
+        .addr-right {
+            border-left: 4rpx solid #c3cac3;
+            padding-left: 20rpx;
+            color: #777777;
+            font-size: 28rpx;
+            display: flex;
+            flex-direction: column;
+
+            .company {
+                color: #000000;
+                font-size: 26rpx;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30rpx 0 30rpx 0;
+
+        .bottom-left {
+            display: flex;
+            flex-direction: row;
+
+            image {
+                width: 90rpx;
+                height: 90rpx;
+                border-radius: 50%;
+            }
+
+            .user {
+                margin-left: 20rpx;
+                display: flex;
+                flex-direction: column;
+
+                .time {
+                    margin-top: 20rpx;
+                    font-size: 24rpx;
+                    color: #777777;
+                }
+            }
+        }
+
+        .bottom-right {
+            display: flex;
+            flex-direction: row;
+
+            .icon-group {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 24rpx;
+                font-weight: bold;
+                padding: 0 20rpx 0 20rpx;
+
+                image {
+                    height: 65rpx;
+                    width: 65rpx;
+                    margin-bottom: 20rpx;
+                }
+            }
+        }
+    }
+
+}
+
+.notes {
+    background-color: #fefced;
+    color: #da8d67;
+    font-size: 26rpx;
+    padding: 20rpx;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 89rpx;
+}
+
+.bottom-btns {
+    width: 100%;
+    height: 89rpx;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+
+    .icon-btn {
+        height: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 24rpx;
+
+        .icon {
+            color: #f64c4c;
+            font-size: 30rpx;
+        }
+    }
+
+    .btn {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 54rpx;
+            width: 2rpx;
+            background-color: #777777;
+            bottom: 16rpx;
+            right: 0;
+        }
+    }
+
+    .deal-btn {
+        background-color: #f84c4c;
+        color: white;
+        text-align: center;
+        height: 89rpx;
+        width: 250rpx;
+        line-height: 84rpx;
+    }
+}

@@ -1,0 +1,33 @@
+<!--components/reqDetail/reqList.wxml-->
+<view class="reqList">
+
+  <block wx:if="{{reqData.length !== 0}}">
+    <view class="item" wx:for="{{reqData}}" wx:key="key" data-index="{{item.id}}" bindtap="showDetail">
+    <view class="item-header">
+      <view class="time">{{item.addtime}}</view>
+      <view class="right" style="width: 200rpx;text-align: right;">
+        <button type="default" size="mini" data-index="{{item.id}}" catchtap="delHandle">删除</button>
+      </view>
+    </view>
+    <view class="item-bottom">
+      <view class="content">{{item.content}}</view>
+      <view class="reply">收到的回复（<text>{{item.reply[0].count}}</text>）</view>
+    </view>
+  </view>
+  </block>
+  
+  <navigator wx:else class="jump" url="/pages/lifeReq/lifeReq">暂无相关信息,去发布</navigator>
+
+  <!-- <view class="item">
+    <view class="item-header">
+      <view class="time">888</view>
+      <view class="right" style="width: 200rpx;text-align: right;">
+        <button type="default" size="mini">删除</button>
+      </view>
+    </view>
+    <view class="item-bottom">
+      <view class="content">怎么回事小老弟</view>
+      <view class="reply">收到的回复（<text class="count">0</text>）</view>
+    </view>
+  </view> -->
+</view>

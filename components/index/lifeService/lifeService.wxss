@@ -1,0 +1,58 @@
+.life-service {
+  border-top: 18rpx solid #f6f6f6;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.life-service .item {
+  width: 100%;
+  height: 179rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.life-service .item image {
+  width: 100%;
+  height: 100%;
+}
+
+.life-service .item .content {
+  position: absolute;
+  top: 23rpx;
+  left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.life-service .item .content .title {
+  font-weight: bold;
+}
+
+.life-service .item .content .bottom {
+  margin-top: 0rpx;
+  font-size: 20rpx;
+  color: #848484;
+}
+
+.life-service .bottom {
+  margin-top: 14rpx;
+}
+
+.life-service .top {
+  margin-bottom: 14rpx;
+}
+
+.life-service .left-items {
+  flex: 1;
+  margin-right: 15rpx;
+}
+
+.life-service .right-items {
+  flex: 1;
+  margin-left: 15rpx;
+}

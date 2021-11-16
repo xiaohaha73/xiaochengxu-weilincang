@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/me/me",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/business/business",
+    "pages/message/message",
+
+    "pages/reqDetail/reqDetail",
+    "pages/noteDetail/noteDetail",
+    "pages/publish/publish",
+    "pages/lifeReq/lifeReq",
+    "pages/sphzb/sphzb"
+    
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#f74b4b",
+    "color":"#595959",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index01.png"
+      },
+      {
+        "pagePath": "pages/business/business",
+        "text": "商圈",
+        "iconPath": "images/icon/file.png",
+        "selectedIconPath": "images/icon/file01.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "images/icon/msg.png",
+        "selectedIconPath": "images/icon/msg01.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "用户中心",
+        "iconPath": "images/icon/me.png",
+        "selectedIconPath": "images/icon/me01.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

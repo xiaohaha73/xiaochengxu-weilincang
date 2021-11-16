@@ -1,0 +1,11 @@
+<!--pages/reqDetail/reqDetail.wxml-->
+<view class="tab-bar">
+  <view class="{{currentIndex===0?'tab-option active':'tab-option'}}" data-index="0" bind:tap="activeHandle">发布的求助</view>
+  <view class="{{currentIndex===1?'tab-option active':'tab-option'}}" data-index="1" bind:tap="activeHandle">我的回复</view>
+</view>
+<view class="show-view" wx:if="{{currentIndex === 0}}">
+  <ReqList/>
+</view>
+<view class="show-view" wx:if="{{currentIndex === 1}}">
+  我的回复
+</view>
